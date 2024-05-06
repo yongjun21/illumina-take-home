@@ -100,7 +100,7 @@ function useProgressFillCommands() {
     return [
       'M 0 0',
       `L 0 ${-fillRadius}`,
-      `A ${fillRadius} ${fillRadius} 0 ${fillEndX > Math.PI ? 0 : 1} 1 ${fillEndX} ${fillEndY}`,
+      `A ${fillRadius} ${fillRadius} 0 ${fillAngle > Math.PI ? 1 : 0} 1 ${fillEndX} ${fillEndY}`,
       'E'
     ].join(' ');
   });

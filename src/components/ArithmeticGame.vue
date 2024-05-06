@@ -141,6 +141,7 @@ const onSubmit = () => {
 <style lang="scss">
 .arithmetic-game {
   width: 100%;
+  position: relative;
 
   .body,
   .header,
@@ -184,6 +185,14 @@ const onSubmit = () => {
     .start-hard {
       background-color: darkred;
     }
+  }
+
+  .end-splash {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 
   .input-box {
