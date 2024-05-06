@@ -5,5 +5,3 @@ import ArithmeticGame from '@/components/ArithmeticGame.vue';
 <template>
   <arithmetic-game></arithmetic-game>
 </template>
-
-<style></style>
