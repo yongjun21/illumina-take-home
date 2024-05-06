@@ -1,5 +1,9 @@
 <template>
-  <div class="arithmetic-game" :class="[gameState, { hard: hardGame }]">
+  <div
+    class="arithmetic-game"
+    :class="[gameState, { hard: hardGame }]"
+    @keydown.esc.prevent="onEsc"
+  >
     <div class="start-splash" v-if="gameState === 'waiting'">
       <button class="start-easy" @click="startGame(false)">Easy Game</button>
       <button class="start-hard" @click="startGame(true)">Hard Game</button>
@@ -135,6 +139,11 @@ const onSubmit = () => {
   } else {
     score.value--;
   }
+};
+
+const onEsc = () => {
+  endGame();
+  gameState.value = 'waiting';
 };
 </script>
 
