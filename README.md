@@ -1,5 +1,7 @@
 # illumina-take-home
 
+https://illumina-yongjun.netlify.app/
+
 This application is a combines three of tasks: Flash Card Game (7), Analog Clock (2) & Roman Numeral Convertor (9).
 
 The game behaves mostly the same as described in the assignment with a couple of small changes.
